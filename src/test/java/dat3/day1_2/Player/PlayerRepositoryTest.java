@@ -38,7 +38,7 @@ class PlayerRepositoryTest {
         //Will this test pass, if it runs AFTER the next text
         var fetchedPlayers = playerRepository.findAll();
         List<Player> players = Streamable.of(fetchedPlayers).stream().toList();
-        assertEquals(3, players.size());
+        assertEquals(4, players.size());
     }
 
     @Test
